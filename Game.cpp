@@ -10,6 +10,7 @@ void Game::registerState(StateEnum stateEnum, State* state) {
 }
 
 void Game::changeState(StateEnum stateEnum) {
+    //Transition to the new state
     if (states[stateEnum]) {
         currentState = states[stateEnum];
         currentState->enter(this); // Pass game pointer to enter

@@ -1,9 +1,9 @@
-#include "Read.hpp"
+#include "ReadInputs.hpp"
 #include "Game.hpp"
 #include <stdio.h>
 
-void Read::enter(Game* game) {
+void ReadInputs::enter(Game* game) {
     printf("Entering Read state\n");
-    game->changeState(StateEnum::TICK);
+    game->changeState(StateEnum::MOVE_PLAYERS);
     printf("Error changing state to TICK\n");
 };

@@ -1,7 +1,7 @@
 
 #include "State.hpp"
 
-class Tick : public State {
+class ReadInputs : public State {
     public:
         void enter(Game* game) override;
 };

@@ -41,7 +41,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(2d_space_shooter main.cpp Game.cpp states/Read.cpp states/Tick.cpp)
+add_executable(2d_space_shooter main.cpp Game.cpp states/ReadInputs.cpp states/MovePlayers.cpp states/WelcomeScreen.cpp Gui.cpp)
 target_include_directories(2d_space_shooter PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 pico_set_program_name(2d_space_shooter "2d_space_shooter")
 pico_set_program_version(2d_space_shooter "0.1")

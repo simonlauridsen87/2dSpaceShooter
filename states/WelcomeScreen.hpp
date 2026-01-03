@@ -1,7 +1,6 @@
-
 #include "State.hpp"
 
-class Read : public State {
+class WelcomeScreen : public State {
     public:
         void enter(Game* game) override;
 };
