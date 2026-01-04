@@ -1,7 +1,9 @@
 #include "Game.hpp"
 #include "states/State.hpp"
+#include "Gui.hpp"
 
 Game::Game(State* state) : currentState(state) {
+    Gui gui = Gui();
     // Constructor - states will be registered after creation
 }
 

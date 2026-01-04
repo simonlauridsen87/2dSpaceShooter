@@ -3,7 +3,12 @@
 #include <stdio.h>
 
 void WelcomeScreen::enter(Game* game) {
-    printf("Entering Welcome Screen state\n");
+    
+    game->gui.clear();
+    game->gui.writeText("Welcome to 2D Space Shooter!", 10, 50, 300);
+
+    sleep_ms(2000); // Display welcome message for 2 seconds
+    
     game->changeState(StateEnum::INIT_GAME);
-    printf("Error changing state to INIT_GAME\n");
+    
 };
