@@ -10,6 +10,7 @@ class Game {
         Gui gui;
         void registerState(StateEnum stateEnum, State* state);
         void changeState(StateEnum stateEnum);
+        void tick();
 
     private:
         State* currentState;

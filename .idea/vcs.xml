@@ -2,5 +2,20 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$USER_HOME$/.pico-sdk/sdk/2.2.0/lib/btstack" vcs="Git" />
+    <mapping directory="$USER_HOME$/.pico-sdk/sdk/2.2.0/lib/cyw43-driver" vcs="Git" />
+    <mapping directory="$USER_HOME$/.pico-sdk/sdk/2.2.0/lib/lwip" vcs="Git" />
+    <mapping directory="$USER_HOME$/.pico-sdk/sdk/2.2.0/lib/mbedtls" vcs="Git" />
+    <mapping directory="$USER_HOME$/.pico-sdk/sdk/2.2.0/lib/tinyusb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/bme280/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/bme68x/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/bme69x/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/bmp280/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/mlx90640/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/scd4x/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/drivers/vl53l5cx/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/micropython/modules/qrcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pimoroni-pico/micropython/modules/ulab" vcs="Git" />
   </component>
 </project>

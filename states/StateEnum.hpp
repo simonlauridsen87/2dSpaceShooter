@@ -1,3 +1,6 @@
+#ifndef STATE_ENUM_HPP
+#define STATE_ENUM_HPP
+
 enum class StateEnum {
     WELCOME_SCREEN,
     INIT_GAME,
@@ -6,3 +9,5 @@ enum class StateEnum {
     MOVE_ENEMIES,
     GAME_OVER
 };
+
+#endif

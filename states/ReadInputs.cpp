@@ -4,6 +4,9 @@
 
 void ReadInputs::enter(Game* game) {
     printf("Entering Read state\n");
-    game->changeState(StateEnum::MOVE_PLAYERS);
-    printf("Error changing state to TICK\n");
+};
+
+StateEnum ReadInputs::update(Game* game) {  
+    // This state will immediately transition to the next state, so we can return the next state enum
+    return StateEnum::MOVE_PLAYERS;
 };

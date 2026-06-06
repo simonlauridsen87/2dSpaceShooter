@@ -18,3 +18,12 @@ void Game::changeState(StateEnum stateEnum) {
         currentState->enter(this); // Pass game pointer to enter
     }
 }
+
+void Game::tick() {
+    if (currentState) {
+        StateEnum nextStateEnum = currentState->update(this); // Pass game pointer to update
+        if (nextStateEnum != StateEnum::GAME_OVER) { // Check for game over condition
+            changeState(nextStateEnum); // Transition to the next state
+        }
+    }
+}

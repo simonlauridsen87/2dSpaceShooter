@@ -1,6 +1,6 @@
 #include "State.hpp"
 
-class WelcomeScreen : public State {
+class InitGame : public State {
     public:
         void enter(Game* game) override;
         StateEnum update(Game* game) override;
