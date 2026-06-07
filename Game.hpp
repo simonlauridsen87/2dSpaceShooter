@@ -10,9 +10,11 @@ class Game {
         Gui gui;
         void registerState(StateEnum stateEnum, State* state);
         void changeState(StateEnum stateEnum);
+        Player addPlayer();
         void tick();
 
     private:
         State* currentState;
         std::map<StateEnum, State*> states;
+        std::array<Player*, 2> players;
 };
