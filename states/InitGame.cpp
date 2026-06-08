@@ -10,6 +10,10 @@ void InitGame::enter(Game* game) {
 };
 
 StateEnum InitGame::update(Game* game) {
-    // This state will immediately transition to the next state, so we can return the next state enum
+    Player p1 = Player(160, 1);
+    game->addPlayer(&p1);
+
+
+
     return StateEnum::READ_INPUTS;
 };

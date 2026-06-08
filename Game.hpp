@@ -1,6 +1,7 @@
 #include <map>
 #include "states/StateEnum.hpp"
 #include "Gui.hpp"
+#include "Player.hpp"
 
 class State;
 
@@ -10,7 +11,7 @@ class Game {
         Gui gui;
         void registerState(StateEnum stateEnum, State* state);
         void changeState(StateEnum stateEnum);
-        Player addPlayer();
+        void addPlayer(Player* player);
         void tick();
 
     private:

@@ -19,6 +19,14 @@ void Game::changeState(StateEnum stateEnum) {
     }
 }
 
+void Game::addPlayer(Player* player) {
+    if (players[0] == nullptr) {
+        players[0] = player;
+    } else if (players[1] == nullptr) {
+        players[1] = player;
+    }
+}
+
 void Game::tick() {
     if (currentState) {
         StateEnum nextStateEnum = currentState->update(this); // Pass game pointer to update
